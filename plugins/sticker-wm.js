@@ -1,24 +1,23 @@
-import { addExif } from '../lib/sticker.js'
-let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (!m.quoted) throw `${mg}𝙍𝙀𝙎𝙋𝙊𝙉𝘿𝙀 𝘼𝙇 𝙎𝙏𝙄𝘾𝙆𝙀𝙍 𝘾𝙊𝙉 𝙐𝙉𝘼 𝘿𝙀𝙎𝘾𝙍𝙄𝙋𝘾𝙄𝙊𝙉 𝙔 𝙉𝙊𝙈𝘽𝙍𝙀\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command} Texto1|Texto2*`
-let stiker = false 
-try {
-let [packname, ...author] = text.split('|')
-author = (author || []).join('|')
+importar {addExif} desde '../lib/sticker.js'
+dejar manejador = asíncrono (m, { conexión, texto }) => {
+if (! M.Quoted) Throw '*[❗𝐈𝐍𝐅𝐎❗] 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴 𝙰𝙻 𝚀𝚄𝙴 𝙳𝙴𝚂𝙴𝙰 𝙰𝙶𝚁𝙴𝙶𝙰𝚁 𝙰𝙶𝚁𝙴𝙶𝙰𝚁 𝚈 𝙽𝙾𝙼𝙱𝚁𝙴 𝙽𝙾𝙼𝙱𝚁𝙴*'
+dejar pegatina = falso
+probar {
+let [nombre del paquete, ...autor] = texto.split('|')
+autor = (autor || []).join('|')
 let mime = m.quoted.mimetype || ''
-if (!/webp/.test(mime)) throw `${mg}𝙍𝙀𝙎𝙋𝙊𝙉𝘿𝙀 𝘼𝙇 𝙎𝙏𝙄𝘾𝙆𝙀𝙍 𝘾𝙊𝙉 𝙐𝙉𝘼 𝘿𝙀𝙎𝘾𝙍𝙄𝙋𝘾𝙄𝙊𝙉 𝙔 𝙉𝙊𝙈𝘽𝙍𝙀\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command} Texto1|Texto2*`
-let img = await m.quoted.download()
-if (!img) throw `${mg}𝙍𝙀𝙎𝙋𝙊𝙉𝘿𝙀 𝘼𝙇 𝙎𝙏𝙄𝘾𝙆𝙀𝙍 𝘾𝙊𝙉 𝙐𝙉𝘼 𝘿𝙀𝙎𝘾𝙍𝙄𝙋𝘾𝙄𝙊𝙉 𝙔 𝙉𝙊𝙈𝘽𝙍𝙀\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command} Texto1|Texto2*`
-stiker = await addExif(img, packname || '', author || '')
-} catch (e) {
-console.error(e)
-if (Buffer.isBuffer(e)) stiker = e
-} finally {
-if (stiker) conn.sendFile(m.chat, stiker, 'wm.webp', '', m, false, { asSticker: true })
-else throw `${fg}𝙍𝙀𝘾𝙐𝙀𝙍𝘿𝙀 𝙍𝙀𝙎𝙋𝙊𝙉𝘿𝙀𝙍 𝘼𝙇 𝙎𝙏𝙄𝘾𝙆𝙀𝙍 𝘾𝙊𝙉 𝙐𝙉𝘼 𝘿𝙀𝙎𝘾𝙍𝙄𝙋𝘾𝙄𝙊𝙉 𝙔 𝙉𝙊𝙈𝘽𝙍𝙀\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command} Texto1|Texto2*`
+if (! /webp/.test (mime)) Throw '*[❗𝐈𝐍𝐅𝐎❗] 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴 𝙰𝙻 𝚂𝚃𝙸𝙲𝙺𝙴𝚁 𝙰𝙶𝚁𝙴𝙶𝙰𝚁 𝙿𝙰𝚀𝚄𝙴𝚃𝙴 𝚈 𝚄𝙽 𝙽𝙾𝙼𝙱𝚁𝙴*'
+let img = esperar m.quoted.download()
+if (! img) Throw '*[❗𝐈𝐍𝐅𝐎❗] 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴 𝙰𝙻 𝚂𝚃𝙸𝙲𝙺𝙴𝚁 𝙳𝙴𝚂𝙴𝙰 𝙰𝙶𝚁𝙴𝙶𝙰𝚁 𝙿𝙰𝚀𝚄𝙴𝚃𝙴 𝚈 𝙽𝙾𝙼𝙱𝚁𝙴 𝙽𝙾𝙼𝙱𝚁𝙴*'
+stiker = esperar addExif(img, nombre del paquete || '', autor || '')
+} atrapar (e) {
+consola.error(e)
+if (Buffer.isBuffer(e)) pegatina = e
+} finalmente {
+if (etiqueta) conn.sendFile(m.chat, etiqueta, 'wm.webp', '', m, false, { asSticker: true })
+De lo contrario lanza '*[❗𝐈𝐍𝐅𝐎❗] 𝙻𝙾 𝚂𝙸𝙴𝙽𝚃𝙾, 𝙰𝙻𝙶𝙾 𝙵𝙰𝙻𝙻𝙾 .. 𝙲𝙾𝚁𝚁𝙾𝙱𝙾𝚁𝙴 𝚀𝚄𝙴 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙸𝙳𝙾 𝙰 𝚄𝙽 𝚈 𝙰𝙶𝚁𝙴𝙶𝙰𝙳𝙾 𝚄𝙽 𝙽𝙾𝙼𝙱𝚁𝙴 𝙿𝙰𝚀𝚄𝙴𝚃𝙴 𝙿𝙰𝚀𝚄𝙴𝚃𝙴 𝚈 𝚄𝙽 𝚄𝚂𝚄𝙰𝚁𝙸𝙾*'
 }}
-handler.help = ['wm <packname>|<author>']
-handler.tags = ['sticker']
-handler.command = /^wm|crearwm$/i
-handler.level = 4
-export default handler
+handler.help = ['wm <nombre del paquete>|<autor>']
+handler.tags = ['pegatina']
+manejador.comando = /^robar|wm$/i
+controlador predeterminado de exportación
