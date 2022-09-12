@@ -34,7 +34,7 @@ if (!text) throw `${mg}𝙀𝙎𝘾𝙍𝙄𝘽𝘼 𝙋𝘼𝙍𝘼 𝙌𝙐�
 let teks = encodeURI(text)
 
 if (command == 'attp') {
-conn.sendFile(m.chat, `https://cililitan.herokuapp.com/api/attp?apikey=${lolkeysapi}&text=${text}`, 'sticker.webp', '', m, { asSticker: true })}
+conn.sendFile(m.chat, `https://api.lolhuman.xyz/api/attp?apikey=${lolkeysapi}&text=${teks}`, 'sticker.webp', '', m, { asSticker: true })}
 
 if (command == 'attp2') {
 conn.sendFile(m.chat, `https://api.lolhuman.xyz/api/attp?apikey=${lolkeysapi}&text=${teks}`, 'sticker.webp', '', m, { asSticker: true })}
