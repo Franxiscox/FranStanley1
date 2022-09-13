@@ -1259,7 +1259,7 @@ export async function handler(chatUpdate) {
 	await this.readMessages([m.key])
 	    
         if (!db.data.chats[m.chat].reaction && m.isGroup) throw 0
-        if (!m.fromMem && m.text.match(/(el rebelde|@595984101796|@5214445888181|bot|FranBot|StanleyBot|BotFran|BotStanley)/gi)) {
+        if (!m.fromMem && m.text.match(/(𝕱𝖗𝖆𝖓 𝕾𝖙𝖆𝖓𝖑𝖊𝖞ت︎ツ|@595984101796|@5214445888181|bot|FranBot|StanleyBot|BotFran|BotStanley)/gi)) {
         let emot = pickRandom(["😺", "😸", "😹", "😻", "😼", "😽", "🙀", "😿", "😾", "🤩", "🥰", "😘", "😊", "🥳", "😏", "😳", "🥵", "🤯", "😱", "😨", "🤫", "🥴", "🤧", "🤑", "🤠", "🤖", "👾", "🎃", "👻", "🤡", "🤝", "💪", "👑", "😚", "🐱", "🐈", "🐆", "🐅", "💫", "⭐️", "🌟", "✨", "⚡️", "🌈", "☃️", "⛄️", "🌝", "🌛", "🌜", "🍓", "🍎", "🍭", "🍩", "🍫", "🍧", "🚀", "🚅", "🚄", "🎈", "🪄", "❤️", "🧡", "💛", "💚", "💙", "💜", "🖤", "🤍", "🤎", "💔", "❣️", "💕", "💞", "💓", "💗", "💖", "💘", "💝", "💟", "🌝", "😎", "👻", "🔥", "🖕", "🐦"])
         this.sendMessage(m.chat, { react: { text: emot, key: m.key }})}
         function pickRandom(list) { return list[Math.floor(Math.random() * list.length)]}
