@@ -393,7 +393,7 @@ conn.sendHydrated(m.chat, str, wm, pp, 'https://github.com/Franxiscox', '𝙶�
 ['🔰 𝙈𝙚𝙣𝙪 𝘼𝙪𝙙𝙞𝙤𝙨 🔰', '.audios']
 
 ], m,)
-await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, {
+await conn.sendFile(m.chat, vn, '', null, m, true, {
 type: 'audioMessage', 
 ptt: true})
 } catch (e) {
