@@ -65,14 +65,13 @@ text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length
 
 let str = `
 ╭══〘 ✯✯✯✯✯✯✯✯ 〙═╮
-║═ *𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫*
+║═ *𝕭𝖔𝖙 𝕱𝖗𝖆𝖓 𝕾𝖙𝖆𝖓𝖑𝖊𝖞ت︎ツ*
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ║➤ *✨𝗛ola como esta, ${name}!!*
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-║➤ *Creador del Bot: el rebelde* 
-║➤ *Numero del creador:* *wa.me/5492266466080 (No Bot)*
-║➤ *Numero del Bot oficial:* *wa.me/972529277479*
-║➤ *Numero del Bot ofc²:* *wa.me/972529277406*
+║➤ *Creador del Bot: 𝕱𝖗𝖆𝖓 𝕾𝖙𝖆𝖓𝖑𝖊𝖞ت︎ツ* 
+║➤ *Numero del creador:* *wa.me/+595984101796 (No Bot)*
+║➤ *Numero del Bot oficial:* *wa.me/+524445888181*
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ║➤ 𝙩𝙞𝙚𝙢𝙥𝙤 𝙖𝙘𝙩𝙞𝙫𝙤𝙨: ${uptime}
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡
@@ -91,7 +90,6 @@ let str = `
 ┣ ඬ⃟ℹ️ _${usedPrefix}estado_
 ┣ ඬ⃟ℹ️ _${usedPrefix}ping_
 ┣ ඬ⃟ℹ️ _${usedPrefix}infomenu
-┣ ඬ⃟ℹ️ _${usedPrefix}menusimple
 ┣ ඬ⃟ℹ️ _${usedPrefix}juegosmenu
 ┣ ඬ⃟ℹ️ _${usedPrefix}grupomenu
 ┣ ඬ⃟ℹ️ _${usedPrefix}descargasmenu
@@ -112,7 +110,7 @@ let str = `
 ┃ *<UNE UN BOT A TU GRUPO/>*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ┣ ඬ⃟🤖 _${usedPrefix}join *link del grupo*_ 
-┣ ඬ⃟🤖 _${usedPrefix}bottemporal *link de grupo*
+┣ ඬ⃟🤖 _${usedPrefix}botemporal *link de grupo*
 ┗━━━━━━━━━━━━━┛
 ┏━━━━━━━━━━━━━┓
 ┃ *<TOPS/>*
@@ -390,7 +388,7 @@ let str = `
 ┣ ඬ⃟👑 _${usedPrefix}disable *autoread*_
 ┗━━━━━━━━━━━━━┛
 `.trim()
-conn.sendHydrated(m.chat, str, wm, pp, 'https://github.com/elrebelde21/The-LoliBot-MD', '𝙶𝙸𝚃𝙷𝚄𝙱', null, null, [
+conn.sendHydrated(m.chat, str, wm, pp, 'https://github.com/Franxiscox', '𝙶𝙸𝚃𝙷𝚄𝙱', null, null, [
 ['🔰grupos', '.grupos'],
 ['🔰 𝙈𝙚𝙣𝙪 𝘼𝙪𝙙𝙞𝙤𝙨 🔰', '.audios']
 
