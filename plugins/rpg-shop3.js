@@ -13,14 +13,14 @@ let handler = async (m, { conn, command, args, usedPrefix }) => {
 ┃ *Ha Gastado* :  -${diamantetk * count} 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀𝙎 💎
 ╰━━━━━〔 *𓃠 ${vs}* 〕━━━━⬣`.trim()
     
-await conn.sendHydrated(m.chat, gata, wm, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+await conn.sendHydrated(m.chat, gata, wm, null, md, '𝕭𝖔𝖙 𝕱𝖗𝖆𝖓 𝕾𝖙𝖆𝖓𝖑𝖊𝖞ت︎ツ', null, null, [
 ['💎 𝘾𝙤𝙢𝙥𝙧𝙖𝙧 𝙓50', '.buy3 50'],
 ['💎 𝘾𝙤𝙢𝙥𝙧𝙖𝙧 𝙓100', '.buy3 100'],
 ['💎 𝘾𝙤𝙢𝙥𝙧𝙖 𝘼𝙗𝙨𝙤𝙡𝙪𝙩𝙖', '/buyall3']
 ], m,)
     
   } else //conn.reply(m.chat, `❎ Lo siento, no tienes suficientes *XP* para comprar *${count}* Diamantes💎`, m)
-    await conn.sendHydrated(m.chat, `*No tiene sufuciente 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀𝙎 💎 para comprar ${count} 𝙏𝙊𝙆𝙀𝙉(𝙎)* 🪙\n\n*Le recomiendo que interactúe con GataBot-MD para Obtener Tokens, puede ver sus tokens con el comando ${usedPrefix}cartera o ${usedPrefix}wallet*`, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', null, null, [
+    await conn.sendHydrated(m.chat, `*No tiene sufuciente 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀𝙎 💎 para comprar ${count} 𝙏𝙊𝙆𝙀𝙉(𝙎)* 🪙\n\n*Le recomiendo que interactúe con 𝕭𝖔𝖙 𝕱𝖗𝖆𝖓 𝕾𝖙𝖆𝖓𝖑𝖊𝖞ت︎ツ para Obtener Tokens, puede ver sus tokens con el comando ${usedPrefix}cartera o ${usedPrefix}wallet*`, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', null, null, [
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu'],
 ], m,)
 }
