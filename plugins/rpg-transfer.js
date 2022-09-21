@@ -29,7 +29,7 @@ async function handler(m, { conn, args, usedPrefix, command }) {
 
 Tienes  *60* s
 `.trim()
-    let c = '𝚃𝚑𝚎 𝙻𝚘𝚕𝚒𝚋𝚘𝚝-𝙼𝙳'
+    let c = '𝕭𝖔𝖙 𝕱𝖗𝖆𝖓 𝕾𝖙𝖆𝖓𝖑𝖊𝖞ت︎ツ'
     conn.sendButton(m.chat, confirm, c, null, [['si'], ['no']], m, { mentions: [who] })
     confirmation[m.sender] = {
         sender: m.sender,
@@ -72,7 +72,6 @@ handler.before = async m => {
 
 handler.help = ['transfer'].map(v => v + ' [tipo] [cantidad] [@tag]')
 handler.tags = ['xp']
-handler.register = true
 handler.command = ['payxp', 'transfer', 'darxp'] 
 
 handler.disabled = false
