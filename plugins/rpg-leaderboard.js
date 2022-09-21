@@ -40,7 +40,7 @@ Tú : *${usersRole.indexOf(m.sender) + 1}* de *${usersRole.length} 𝚞𝚜𝚞�
 
 ${sortedRole.slice(0, len).map(({ jid, role }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} ${role}`).join`\n`}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-💠 *𝚃𝙾𝙿 ${len} 𝙻𝙾𝙻𝙸𝙲𝙾𝙸𝙽𝚂 🐈*
+💠 *𝚃𝙾𝙿 ${len} 𝙲𝙾𝙸𝙽𝚂 🐈*
 Tú : *${usersMoney.indexOf(m.sender) + 1}* de *${usersMoney.length} 𝚞𝚜𝚞𝚊𝚛𝚒𝚘𝚜*
 
 ${sortedMoney.slice(0, len).map(({ jid, money }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${money} GataCoins*`).join`\n`}
@@ -50,7 +50,7 @@ ${sortedMoney.slice(0, len).map(({ jid, money }, i) => `${i + 1}. ${participants
       mentionedJid: [...usersExp.slice(0, len), ...usersLim.slice(0, len), ...usersLevel.slice(0, len), ...usersRole.slice(0, len), ...usersMoney.slice(0, len)].filter(v => !participants.some(p => v === p.jid))
     }
   })
-await conn.sendHydrated(m.chat, wm, `𝚊𝚌𝚝𝚞𝚊𝚕𝚒𝚣𝚊𝚛 𝚝𝚞 𝚍𝚊𝚝𝚘𝚜 𝚌𝚘𝚗 𝚕𝚘𝚜 𝚋𝚘𝚝𝚘𝚗𝚎𝚜 𝚍𝚎 𝚊𝚋𝚊𝚓𝚘 | 𝚎𝚗 𝚎𝚕 𝚝𝚘𝚙 𝚛𝚊𝚗𝚔𝚒𝚗𝚐 𝚘 𝚌𝚘𝚗 𝚎𝚕 𝚌𝚘𝚖𝚊𝚗𝚍𝚘:\n${usedPrefix}nivel\n${usedPrefix}exp\n${usedPrefix}rol`, null, md, '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', null, null, [
+await conn.sendHydrated(m.chat, wm, `𝚊𝚌𝚝𝚞𝚊𝚕𝚒𝚣𝚊𝚛 𝚝𝚞 𝚍𝚊𝚝𝚘𝚜 𝚌𝚘𝚗 𝚕𝚘𝚜 𝚋𝚘𝚝𝚘𝚗𝚎𝚜 𝚍𝚎 𝚊𝚋𝚊𝚓𝚘 | 𝚎𝚗 𝚎𝚕 𝚝𝚘𝚙 𝚛𝚊𝚗𝚔𝚒𝚗𝚐 𝚘 𝚌𝚘𝚗 𝚎𝚕 𝚌𝚘𝚖𝚊𝚗𝚍𝚘:\n${usedPrefix}nivel\n${usedPrefix}exp\n${usedPrefix}rol`, null, md, '𝕭𝖔𝖙 𝕱𝖗𝖆𝖓 𝕾𝖙𝖆𝖓𝖑𝖊𝖞ت︎ツ', null, null, [
 ['𝙈𝙚𝙣𝙪 𝙅𝙪𝙚𝙜𝙤𝙨 🎡', '#juegosmenu'],
 ['𝙍𝙖𝙣𝙜𝙤𝙨 🚹', '#rol'],
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', `${usedPrefix}menu`]
