@@ -1,5 +1,3 @@
-// Gracias a https://github.com/BrunoSobrino
-
 import { sticker } from '../lib/sticker.js'
 import MessageType from '@adiwajshing/baileys'
 import { EmojiAPI } from 'emoji-api' 
@@ -7,26 +5,28 @@ const emoji = new EmojiAPI()
 
 let handler = async (m, { conn, args, usedPrefix, command, isPrems }) => {
 let er = `
-${mg}𝘿𝙀𝘽𝙀 𝘿𝙀 𝙐𝙎𝘼𝙍 𝙀𝙇 𝘾𝙊𝙈𝘼𝙉𝘿𝙊 𝘾𝙊𝙈𝙊 𝙀𝙉 𝙀𝙇 𝙀𝙅𝙀𝙈𝙋𝙇𝙊
-*${usedPrefix + command} _tipo emoji_*
+*[❗] 𝙴𝙻 𝚄𝚂𝙾 𝙲𝙾𝚁𝚁𝙴𝙲𝚃𝙾 𝙳𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙴𝚂*
+*◉ ${usedPrefix + command} <tipo> <emoji>*
 
-⊱⊱ 𝙀𝙅𝙀𝙈𝙋𝙇𝙊
-*${usedPrefix + command}* sa 😹
+*—◉ 𝙴𝙹𝙴𝙼𝙿𝙻𝙾:*
+*◉ ${usedPrefix + command}* fa 😎
 
-⊱⊱ 𝙏𝙄𝙋𝙊𝙎 𝘿𝙀 𝙀𝙈𝙊𝙅𝙄𝙎
+*—◉ 𝚃𝙸𝙿𝙾𝚂* 
 
-*✦ wha = whatsapp* 
-*✦ sa = samsung*
-*✦ fa = facebook*
-*✦ ig = Instagram*
-*✦ go = google*
-*✦ ht = htc*
-*✦ mi = microsoft*
-*✦ mo = mozilla*
-*✦ op = openmoji*
-*✦ pi = pixel*
-*✦ ap = apple*
-*✦ tw = twitter*`
+*◉ wha = whatsapp* 
+*◉ ap = apple*
+*◉ fa = facebook*
+*◉ ig = Instagram*
+*◉ go = google*
+*◉ ht = htc*
+*◉ mi = microsoft*
+*◉ mo = mozilla*
+*◉ op = openmoji*
+*◉ pi = pixel*
+*◉ sa = samsung*
+*◉ tw = twitter*
+
+*—◉ 𝚂𝙾𝙻𝙾 𝚄𝚂𝙰𝚁 𝚄𝙽 𝙴𝙼𝙾𝙹𝙸 𝚈 𝚁𝙴𝚂𝙿𝙴𝚃𝙴 𝙻𝙾𝚂 𝙴𝚂𝙿𝙰𝙲𝙸𝙾𝚂*`
 
 if (!args[0]) throw er
 let template = (args[0] || '').toLowerCase()
